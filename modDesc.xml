@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="42">
+    <author>Rushmead</author>
+    <authorContact>rushmead@gmail.com</authorContact>
+    <version>1.0.0</version>
+    <title>
+        <en>MoneyMod</en>
+        <de>MoneyMod</de>
+        <pl>MoneyMod</pl>
+        <fr>MoneyMod</fr>
+        <ru>MoneyMod</ru>
+        <it>MoneyMod</it>
+        <hu>MoneyMod</hu>
+        <nl>MoneyMod</nl>
+        <es>MoneyMod</es>
+    </title>
+    
+    
+    <description>
+        <en>
+<![CDATA[Add more money!
+
+Default control keys:
+  RIGHT-CTRL Numpad +     = Add 1 million
+  RIGHT-CTRL Numpad -     = Take 1 million
+  RIGHT-SHIFT Numpad +     = Add $100,000
+  RIGHT-SHIFT Numpad -     = Take $100,000
+]]>
+        </en>
+    </description>
+
+    <iconFilename>moneymod.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <l10n filenamePrefix="modDesc_l10n" />
+
+    <extraSourceFiles>
+        <sourceFile filename="MoneyMod.lua" />
+    </extraSourceFiles>
+    <actions>
+        <action name="MoneyMod_ADDMILLION" />
+        <action name="MoneyMod_TAKEMILLION" />
+        <action name="MoneyMod_ADDHTHOUSAND" />
+        <action name="MoneyMod_TAKEHTHOUSAND" />
+    </actions>
+    <inputBinding>
+        <actionBinding action="MoneyMod_ADDMILLION">
+                <binding device="KB_MOUSE_DEFAULT" input="KEY_rctrl KEY_KP_plus" />>
+        </actionBinding>
+        <actionBinding action="MoneyMod_TAKEMILLION">
+                <binding device="KB_MOUSE_DEFAULT" input="KEY_rctrl KEY_KP_minus" />>
+        </actionBinding>
+        <actionBinding action="MoneyMod_ADDHTHOUSAND">
+                <binding device="KB_MOUSE_DEFAULT" input="KEY_rshift KEY_KP_plus" />>
+        </actionBinding>
+        <actionBinding action="MoneyMod_TAKEHTHOUSAND">
+                <binding device="KB_MOUSE_DEFAULT" input="KEY_rshift KEY_KP_minus" />>
+        </actionBinding>
+    </inputBinding>
+</modDesc>

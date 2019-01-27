@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>
+      Rushmead
+    </translationContributors>
+
+    <texts>
+        <text name="input_MoneyMod_ADDMILLION" text="Add 1 Million"/>
+        <text name="input_MoneyMod_TAKEMILLION" text="Take 1 Million"/>
+        <text name="input_MoneyMod_ADDHTHOUSAND" text="Add $100,000"/>
+        <text name="input_MoneyMod_TAKEHTHOUSAND" text="Take $100,000"/>
+    </texts>
+</l10n>
